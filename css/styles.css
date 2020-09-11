@@ -1,0 +1,122 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+- Very Dark Grayish Blue: hsl(217, 19%, 35%)
+- Desaturated Dark Blue: hsl(214, 17%, 51%)
+- Grayish Blue: hsl(212, 23%, 69%)
+- Light Grayish Blue: hsl(210, 46%, 95%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 13px
+
+### Headings
+
+- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
+- Weights: 500, 700
+
+## Icons
+
+We provide SVGs for the social icons. But please feel free to use a font icon library if you like. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com) 
+*/
+body{
+    font-family:'Manrope', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+    height: 100%;
+}
+.container{
+    height:100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 80%;
+    min-width: 325px;
+    border-radius: 0.3em;
+    position: relative;
+    margin: 1em;
+    box-shadow: 0.5em 0.5em 0.5em hsla(212, 23%, 69%, 0.452);
+}
+.drawer{
+    height: 325px;
+    width:100%;
+    overflow: hidden;
+    border-top-left-radius:0.3em;
+    border-bottom-left-radius:0.3em;
+}
+h5{
+    font-weight: 700 !important;
+    font-size:1.7em;
+    color: hsl(217, 19%, 35%);
+}
+p{
+    font-size:1.1em;
+    color:hsl(212, 23%, 69%);
+}
+h6{
+    font-weight: 700 !important;
+    font-size:1.2em;
+    color: hsl(217, 19%, 35%);
+}
+.avatar{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.share{
+    width:20px;
+    height: 20px;
+    position: relative;
+    z-index: 2;
+}
+.btn-bg{
+    background:hsl(210, 46%, 95%);
+    border-radius: 50%;
+    padding: 10px 10px;;
+}
+.sharingOptions{
+    position: absolute;
+    background:hsl(217, 19%, 35%);
+    width:200px;
+    height: 50px;
+    z-index:1;
+    border-radius: 0.8em;
+    right:0;
+    bottom:70px;
+    opacity:0;
+}
+@media screen and (max-width:991px) and (min-width:320px) {
+    .drawer{
+        border-top-left-radius:0.3em;
+        border-top-right-radius:0.3em;
+        border-bottom-left-radius: 0;
+    }
+    .sharingOptions{
+        position: absolute;
+        background:hsl(217, 19%, 35%);
+        width:95%;
+        height: 22%;
+        z-index:1;
+        border-radius: 0 0 0.8em 0.8em;
+        right:14px;
+        bottom:0;
+        opacity:0;
+        overflow: hidden;
+    }
+}
